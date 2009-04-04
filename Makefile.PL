@@ -3,5 +3,5 @@ use ExtUtils::MakeMaker;
 # the contents of the Makefile that is written.
 WriteMakefile(
     'NAME'	=> 'Tie::FlipFlop',
-    'VERSION_FROM' => 'FlipFlop.pm', # finds $VERSION
+    'VERSION_FROM' => 'lib/Tie/FlipFlop.pm', # finds $VERSION
 );
