@@ -4,4 +4,5 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     'NAME'	=> 'Tie::FlipFlop',
     'VERSION_FROM' => 'lib/Tie/FlipFlop.pm', # finds $VERSION
+     AUTHOR        => 'Abigail <cpan@abigail.be>',
 );
