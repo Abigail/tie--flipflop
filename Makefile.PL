@@ -12,8 +12,7 @@ my  $PACKAGE      =  'Tie::FlipFlop';
 
 my  $LIB_FILE     =  "lib/$PACKAGE.pm";
     $LIB_FILE     =~  s!::!/!g;
-my  $LOCAL_ADDR   =   lc $PACKAGE;
-    $LOCAL_ADDR   =~  s!::!-!g;
+my  $LOCAL_ADDR   =  'cpan';
 my  $DOMAIN       =  'abigail.be';
 my  $REPO         =   $PACKAGE;
     $REPO         =~  s!::!--!g;
