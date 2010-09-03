@@ -6,7 +6,7 @@
 # Change 1..1 below to 1..last_test_to_print .
 # (It may become useful if the test is moved to ./t subdirectory.)
 
-BEGIN { $| = 1; print "1..4\n"; }
+BEGIN { $| = 1; print "1..5\n"; }
 END {print "not ok 1\n" unless $loaded;}
 use Tie::FlipFlop;
 $loaded = 1;
@@ -26,6 +26,6 @@ print $flipflop eq 'Green' ? "ok 3\n" : "not ok 3\n";
 print $flipflop eq 'Red'   ? "ok 4\n" : "not ok 4\n";
 
 # The eval leads to panic: POPSTACK.
-# eval {$flipflop = 'Blue'};
-# print index ($@, "Cannot modify read only variable") == 0
-#           ? "ok 5\n" : "not ok 5\n";
+eval {$flipflop = 'Blue'};
+print index ($@, "Cannot modify read only variable") == 0
+          ? "ok 5\n" : "not ok 5\n";
